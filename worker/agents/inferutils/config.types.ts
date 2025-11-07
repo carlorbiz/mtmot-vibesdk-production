@@ -43,6 +43,16 @@ export enum AIModels {
     // Cerebras models
     CEREBRAS_GPT_OSS = 'cerebras/gpt-oss-120b',
     CEREBRAS_QWEN_3_CODER = 'cerebras/qwen-3-coder-480b',
+
+    // XAI (Grok) models
+    GROK_BETA = 'xai/grok-beta',
+    GROK_2_LATEST = 'xai/grok-2-latest',
+    GROK_2_VISION_LATEST = 'xai/grok-2-vision-latest',
+
+    // Perplexity models
+    PERPLEXITY_SONAR_PRO = 'perplexity/sonar-pro',
+    PERPLEXITY_SONAR = 'perplexity/sonar',
+    PERPLEXITY_SONAR_REASONING = 'perplexity/sonar-reasoning',
 }
 
 export interface ModelConfig {

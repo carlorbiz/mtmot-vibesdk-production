@@ -160,6 +160,34 @@ export function getTemplatesData(): SecretTemplate[] {
 			required: false,
 			category: 'byok',
 		},
+		{
+			id: 'XAI_API_KEY_BYOK',
+			displayName: 'XAI Grok (BYOK)',
+			envVarName: 'XAI_API_KEY_BYOK',
+			provider: 'xai',
+			icon: '🚀',
+			description:
+				'Use your XAI API key for Grok models via Cloudflare AI Gateway',
+			instructions: 'Go to XAI Platform → API Keys → Create new key',
+			placeholder: 'xai-...',
+			validation: '^xai-.{10,}$',
+			required: false,
+			category: 'byok',
+		},
+		{
+			id: 'PERPLEXITY_API_KEY_BYOK',
+			displayName: 'Perplexity (BYOK)',
+			envVarName: 'PERPLEXITY_API_KEY_BYOK',
+			provider: 'perplexity',
+			icon: '🔍',
+			description:
+				'Use your Perplexity API key for research and search via Cloudflare AI Gateway',
+			instructions: 'Go to Perplexity → Settings → API → Generate API Key',
+			placeholder: 'pplx-...',
+			validation: '^pplx-.{10,}$',
+			required: false,
+			category: 'byok',
+		},
 
 		// Development Tools
 		{
